@@ -1,4 +1,4 @@
-pandas
+streamlit
 scikit-learn
-joblib
-flask
+pandas
+numpy

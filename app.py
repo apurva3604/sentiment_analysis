@@ -1,23 +1,22 @@
 import streamlit as st
 import pickle
 
-# Load model and vectorizer
-model = pickle.load(open("sentiment_model.pkl", "rb"))
-vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
-
-# Streamlit app
-st.set_page_config(page_title="Sentiment Analyzer", layout="centered")
+# Load model
+model = pickle.load(open('sentiment_model.pkl', 'rb'))
+vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))  # if you're using one
 
 st.title("🎬 Movie Review Sentiment Analysis")
-st.markdown("Enter a movie review below and find out whether it's **Positive** or **Negative**.")
 
-user_input = st.text_area("✍️ Write your movie review here:")
+review = st.text_area("Enter your movie review:")
 
-if st.button("Predict Sentiment"):
-    if user_input.strip() == "":
-        st.warning("Please enter a review before predicting.")
+if st.button("Predict"):
+    if review.strip() == "":
+        st.warning("Please enter a review.")
     else:
-        transformed_input = vectorizer.transform([user_input])
-        prediction = model.predict(transformed_input)
-        result = "🟢 Positive Review" if prediction[0] == 1 else "🔴 Negative Review"
-        st.success(f"Prediction: {result}")
+        review_vector = vectorizer.transform([review])
+        prediction = model.predict(review_vector)
+
+        if prediction[0] == 1:
+            st.success("✅ Positive Review")
+        else:
+            st.error("❌ Negative Review")
