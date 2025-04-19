@@ -18,7 +18,7 @@ This project is a simple sentiment analysis web app built using Python, Flask, a
 3. The app will show whether the review is Positive or Negative
 
 
-###🛠️ Technologies Used
+### 🛠️ Technologies Used:
 
 Python – Core programming language
 
