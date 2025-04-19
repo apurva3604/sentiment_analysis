@@ -17,8 +17,18 @@ This project is a simple sentiment analysis web app built using Python, Flask, a
 2. Click "Predict"
 3. The app will show whether the review is Positive or Negative
 
-### 📦 Requirements:
-Install required packages with:
+
+🛠️ Technologies Used
+Python – Core programming language
+Streamlit – Frontend & web deployment
+Scikit-learn – Model building (Machine Learning)
+Pandas – Data manipulation
+NumPy – Numerical operations
+Pickle – Saving/loading the trained ML model
+Git & GitHub – Version control and source code hosting
+Streamlit Cloud – App deployment on the web
+
+
 
 ## 🚀 Live Demo
 
