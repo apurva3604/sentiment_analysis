@@ -12,20 +12,28 @@ This project is a simple sentiment analysis web app built using Python, Flask, a
 - Dataset: IMDB Reviews (Kaggle)
 - Text Vectorization: CountVectorizer (Stop words removed)
 
-### 🚀 How to Use:
+### 📦 How to Use:
 1. Enter your movie review in the text box
 2. Click "Predict"
 3. The app will show whether the review is Positive or Negative
 
 
-🛠️ Technologies Used
+###🛠️ Technologies Used
+
 Python – Core programming language
+
 Streamlit – Frontend & web deployment
+
 Scikit-learn – Model building (Machine Learning)
+
 Pandas – Data manipulation
+
 NumPy – Numerical operations
+
 Pickle – Saving/loading the trained ML model
+
 Git & GitHub – Version control and source code hosting
+
 Streamlit Cloud – App deployment on the web
 
 
