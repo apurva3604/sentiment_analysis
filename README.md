@@ -19,3 +19,7 @@ This project is a simple sentiment analysis web app built using Python, Flask, a
 
 ### 📦 Requirements:
 Install required packages with:
+
+## 🚀 Live Demo
+
+👉 [Click here to try the app](https://sentimentanalysis-ceypkqrbhvzywhadut5yx8.streamlit.app/)
